@@ -1,0 +1,264 @@
+body{
+background-image: url(https://img.freepik.com/fotos-premium/fondo-pintura-multicolor-pastel-abstracto_145343-711.jpg?w=740)
+}
+body{ 
+    
+    background-size: cover;
+  
+
+}
+.header{
+  
+    display: flex;
+    padding: 0.5rem 1rem;
+   justify-content: space-between;
+    flex-direction: row;}
+
+h1{
+    color: cadetblue;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to left, darksalmon , bisque );
+    text-decoration: underline;
+}
+
+.Header__anchor{
+    color: cadetblue;
+ font-weight: bold;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ display: flex;
+}
+
+.Header__nav{
+    display: flex;
+    flex-direction: row;}
+
+.Header__item{
+    display: flex;
+    padding: 1rem 0.5rem;
+    background-color: bisque;
+    }
+ .Header__list {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 50PX;
+    }
+.header__anchor--activo{
+    background-color: darksalmon;
+    color: bisque;
+}
+ .contacto{
+    color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    background-image: linear-gradient(to left, darksalmon , bisque );
+}  
+.contact{
+    
+    text-align: center;
+}
+form{
+    text-align: center;
+    color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+ .tip{
+    color: cadetblue;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(to left, darksalmon , bisque );
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:grid;
+    transform: translate(200px, 20px)
+    }
+  
+    .grid{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 40px 80px;
+        border: 1px solid cadetblue;
+        width: 200px;
+        height: 100px;
+        font-weight: bold;
+        justify-content: space-between;
+        transform: translate(200px, 20px);
+       }
+
+    .hijo{
+        border: 1px solid cadetblue ;
+        align-items: flex-end
+    }
+    .images{
+        align-items: center;
+        display: flex;
+    }
+    .lista{
+        color: cadetblue;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        list-style-type: none;
+        text-align: center;
+     }
+    .trabajos{
+        color: cadetblue;
+       text-align: center;
+       background-image: linear-gradient(to left, darksalmon , bisque );
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+.tra{
+    display: flex;
+    align-items: center;
+   
+}
+ .img1{
+    width: 400px;
+height: 400px;
+
+ }
+ .img2{
+    width: 300px;
+    height: 400px;
+ }
+ .img3{
+    width: 400px;
+    height: 400px;
+ }
+ .img4{
+    width: 400px;
+    height: 400px;
+ }
+ .nos{
+    color: cadetblue;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(to left, darksalmon , bisque );
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ }
+ .circulo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+ }
+ .circulo>.imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+
+.sobre{
+    display: contents;
+justify-content:space-around
+
+}
+.contmain{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: linear-gradient(to left, darksalmon , bisque );
+    display: flex;
+    gap: 10px
+    ;
+}
+.imgmain{
+    width: 100%;
+}
+
+    @media screen and (min-width: 1024px ){
+        
+        .grid{
+            display:grid;
+            transform: translate(730px, 20px)
+            }
+            .tip{
+                display:grid;
+                transform: translate(200px, 20px)
+                }
+                .lista{
+                    display:grid;
+                    transform: translate(180px, 20px)
+                    }
+                    .tra{
+                        flex-direction: column;
+                        
+                        } 
+    }   
+
+
+    @media screen and (max-width: 768px){
+        .Header__list {
+            display:flex;
+            flex-direction: column;
+            margin-top: 1rem;
+            height: auto;
+            }     
+            .esq{
+                width: 300px;
+                height: 200px;
+                }
+        .images{
+             flex-direction: column;
+             display: flex;
+
+    }
+        .grid{
+        display:grid;
+        transform: translate(300px, 20px)
+        }
+
+        .tra{
+            flex-direction: column;
+
+            }  }
+
+    @media screen and (max-width: 426px) {
+        .header { flex-direction: column; 
+            overflow: hidden; }
+
+        .Header__list {
+        display:flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        height: auto;
+        }     
+        
+        .contmain{
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: auto 1fr auto;
+        background-image: linear-gradient(to left, darksalmon , bisque );
+        gap: 10px;
+        }
+        .iframe{
+        width: 400px;
+        }
+        .images{
+     flex-direction: column;
+        display: flex;
+         }
+    .grid{
+    display:grid;
+    transform: translate(130px, 20px)
+    }
+    .esq{
+    width: 300px;
+    height: 200px;
+    }
+    .tra{
+    flex-direction: column;
+    }       } 
+
+.saludo{
+    background-color: bisque;
+    font-family:cursive;
+    text-align: center;
+    translate: 50px
+    ;
+}
+    

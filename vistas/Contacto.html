@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto">
+    <meta name="keywords"  content="Contacto, Nombre, Email, Mensaje">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="contacto.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="Header__logocontenedor" href="#">
+         <img class="Header__logo" src="../img/Mimaditos.png" alt="Logo mimaditos" width="300" height="300" >
+        </a>
+        
+        <nav class="Header__nav">
+         <ul class="Header__list">
+             <li class="Header__item">
+                 <a class="Header__anchor" href="../index.html">INICIO</a>
+ 
+             </li>
+
+             <li class="Header__item">
+              <a id="contacto-btn" class="Header__anchor" href="./vistas/Contacto.html">CONTACTO</a>
+          </li>
+          
+             <li class="Header__item">
+                 <a class="Header__anchor" href="Tips.html">TIPS</a>
+ 
+             </li>
+             <li class="Header__item">
+                 <a class="Header__anchor" href="Trabajos.html">TRABAJOS</a>
+ 
+             </li>
+             <li class="Header__item">
+              <a class="Header__anchor" href="sobrenosotros.html">SOBRE NOSOTROS</a> 
+
+            </li>
+         </ul>
+ 
+        </nav>
+ 
+        
+     </header>
+     <div class="contact"> <img src="../phone.gif" alt="" width="50" height="50"> <h3 class="contacto"> Contáctanos: 092657182</h3> </div>
+     <div id="after_submit"></div>
+     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+       <div class="row">
+         <label class="required" for="name">Nombre:</label><br />
+         <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+         <span id="name_validation" class="error_message"></span>
+       </div>
+       <div class="row">
+         <label class="required" for="email">Email:</label><br />
+         <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+         <span id="email_validation" class="error_message"></span>
+       </div>
+       <div class="row">
+         <label class="required" for="message">Mensaje</label><br />
+         <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+         <span id="message_validation" class="error_message"></span>
+       </div>
+         
+         <input id="submit_button" type="submit" value="Send email" />
+     </form>
+     
+</body>
+
+</html>
